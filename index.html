@@ -4,9 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/css/main.css" />
-    <title>Document</title>
+    <title>Coffee House</title>
   </head>
   <body>
-    <h1>Hello Vite!</h1>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="/" class="header__logo">
+            <img src="./src/assets/images/logo.svg" alt="Coffee House" />
+          </a>
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="" class="navigation__link">Favorite coffee</a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__link">About</a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__link">Mobile app</a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__link">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__actions">
+            <button
+              class="theme-toggle"
+              type="button"
+              aria-label="Switch to dark theme"
+            >
+              <span class="theme-toggle__icon theme-toggle__icon--sun">
+                <svg class="icon">
+                  <use href="./src/assets/images/sprite.svg#icon-sun"></use>
+                </svg>
+              </span>
+
+              <span class="theme-toggle__icon theme-toggle__icon--moon">
+                <svg class="icon">
+                  <use href="./src/assets/images/sprite.svg#icon-moon"></use>
+                </svg>
+              </span>
+            </button>
+            <a href="" class="menu-link"
+              ><span>Menu</span>
+              <img
+                src="./src/assets/images/coffee-cup.svg"
+                alt="Menu"
+                class="menu-logo"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main"></main>
+    <footer class="footer"></footer>
   </body>
 </html>
