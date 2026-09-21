@@ -1,0 +1,20 @@
+:root {
+  /* Colors */
+  --color-text-primary: #403f3d;
+  --color-text-inverse: #e1d4c9;
+  --color-text-accent: #b0907a;
+  --color-bg-page: #e1d4c9;
+  --color-bg-container: #665f55;
+  --color-bg-overlay: #403f3dcc;
+  --color-border-primary: #c1b6ad;
+  --color-border-inverse: #665f55;
+
+  /* Typography */
+  --font-family-main: "Inter", sans-serif;
+  --font-size-body: 1rem;
+  --font-size-h1: 4.5rem;
+  --font-size-h2: 3.75rem;
+  --font-size-h3: 1.5rem;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+}
