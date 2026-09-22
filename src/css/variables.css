@@ -15,14 +15,30 @@
   --font-size-h1: 4.5rem;
   --font-size-h2: 3.75rem;
   --font-size-h3: 1.5rem;
+  --font-size-caption: 0.625rem;
   --font-weight-regular: 400;
   --font-weight-semibold: 600;
   --line-height-body: 1.5;
   --line-height-h1: 1.05;
   --line-height-h2: 1.25;
   --line-height-h3: 1.25;
+  --line-height-caption: 1.4;
 
   /* Width */
   --max-width-container: 1440px;
   --container-padding: 2.5rem;
+
+  /* Shape */
+  --radius-small: 20px;
+  --radius-large: 40px;
+  --radius-round: 100px;
+
+  /* Spacing */
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 20px;
+  --space-xl: 24px;
+  --space-2xl: 40px;
+  --space-3xl: 100px;
 }
