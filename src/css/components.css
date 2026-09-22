@@ -108,7 +108,8 @@
 
 .favorites__title,
 .about__title,
-.mobile-app__title {
+.mobile-app__title,
+.social-media__title {
   text-align: center;
   font-weight: var(--font-weight-semibold);
   font-size: var(--font-size-h2);
@@ -117,7 +118,8 @@
 }
 
 .favorites__card-title,
-.favorites__price {
+.favorites__price,
+.contacts__title {
   text-align: center;
   font-weight: var(--font-weight-semibold);
   font-size: var(--font-size-h3);
@@ -142,7 +144,7 @@
   text-align: center;
 }
 
-.favorites__button {
+.round-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -263,4 +265,57 @@
 .icon-google-play {
   width: 36px;
   height: 36px;
+}
+
+.footer {
+  margin-bottom: 40px;
+}
+
+.footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 100px;
+  padding: 100px clamp(60px, 8%, 100px);
+  background-color: var(--color-bg-container);
+  color: var(--color-text-inverse);
+  border-radius: 40px;
+}
+
+.footer__inner > * {
+  flex: 1 0 400px;
+}
+
+.social-media__title {
+  text-align: start;
+}
+
+.social-media__list {
+  display: flex;
+  gap: 12px;
+}
+
+.social-media__link {
+  color: inherit;
+  border-color: var(--color-border-primary);
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contacts__link {
+  font-weight: var(--font-weight-semibold);
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
