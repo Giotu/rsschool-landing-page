@@ -24,3 +24,14 @@ img {
   max-width: 100%;
   display: block;
 }
+
+section {
+  margin-bottom: 100px;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}

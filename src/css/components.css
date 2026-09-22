@@ -84,17 +84,15 @@
   font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-h1);
   color: var(--color-text-inverse);
-  margin: 0;
 }
 
-.hero__title-accent {
+.accent {
   color: var(--color-text-accent);
   font-style: italic;
 }
 
 .hero__text {
   color: var(--color-text-inverse);
-  margin: 0;
 }
 
 .hero__menu-link {
@@ -106,4 +104,115 @@
   padding: 20px 24px;
   background: var(--color-bg-page);
   border-radius: 100px;
+}
+
+.favorites__title,
+.about__title {
+  text-align: center;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-h2);
+  margin-bottom: 40px;
+}
+
+.favorites__card-title,
+.favorites__price {
+  text-align: center;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-h3);
+}
+
+.favorites__slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.favorites__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  max-width: 480px;
+}
+
+.favorites__text {
+  text-align: center;
+}
+
+.favorites__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  aspect-ratio: 1/1;
+  background: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--color-bg-container);
+  color: var(--color-text-primary);
+}
+
+.favorites__button .icon {
+  width: 14px;
+  height: 14px;
+}
+
+.favorites__pagination {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.favorites__indicator {
+  width: 40px;
+  height: 4px;
+  background-color: var(--color-border-primary);
+  border-radius: 100px;
+  margin-top: 40px;
+}
+
+.favorites__indicator--active {
+  background-color: var(--color-bg-container);
+}
+
+.about__title {
+  text-align: left;
+}
+
+.about__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(440px, 660px));
+  grid-template-rows: 430px 120px 430px;
+  grid-auto-rows: 430px 120px;
+  justify-content: center;
+  gap: 40px;
+}
+
+.about__box {
+  max-width: 660px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.about__box:nth-child(1) {
+  grid-row: 1/3;
+}
+
+.about__box:nth-child(2) {
+  grid-row: 3/4;
+}
+
+.about__box:nth-child(3) {
+  grid-row: span 1;
+}
+
+.about__box:nth-child(4) {
+  grid-row: span 2;
+}
+
+.about__image {
+  width: 100%;
+  height: 100%;
+  object-fit: none;
 }
