@@ -183,7 +183,7 @@
 
 .about__content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(440px, 660px));
+  grid-template-columns: repeat(auto-fit, minmax(440px, auto));
   grid-template-rows: 430px 120px 430px;
   grid-auto-rows: 430px 120px;
   justify-content: center;
