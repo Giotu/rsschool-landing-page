@@ -4,6 +4,7 @@ export default defineConfig({
   base: "/rsschool-landing-page/",
 
   build: {
+    minify: false,
     sourcemap: true,
   },
 
