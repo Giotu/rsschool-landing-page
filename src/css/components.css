@@ -15,7 +15,7 @@
 
 .navigation__link,
 .menu-link,
-.hero__menu-link {
+.button-link {
   font-weight: var(--font-weight-semibold);
 }
 
@@ -95,7 +95,7 @@
   color: var(--color-text-inverse);
 }
 
-.hero__menu-link {
+.button-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,7 +107,8 @@
 }
 
 .favorites__title,
-.about__title {
+.about__title,
+.mobile-app__title {
   text-align: center;
   font-weight: var(--font-weight-semibold);
   font-size: var(--font-size-h2);
@@ -215,4 +216,51 @@
   width: 100%;
   height: 100%;
   object-fit: none;
+}
+
+.mobile-app__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.mobile-app__info,
+.mobile-app__image {
+  flex: 1 1 420px;
+  max-width: 630px;
+}
+
+.mobile-app__title {
+  text-align: start;
+}
+
+.mobile-app__actions {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.mobile-app__button {
+  border: 1px solid var(--color-bg-container);
+  gap: 8px;
+  padding: 11px 20px;
+}
+
+.mobile-app__button-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.mobile-app__description {
+  font-size: 0.625rem;
+  line-height: 140%;
+}
+
+.icon-app-store,
+.icon-google-play {
+  width: 36px;
+  height: 36px;
 }
