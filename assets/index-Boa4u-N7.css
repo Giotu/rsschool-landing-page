@@ -1,0 +1,711 @@
+/*! modern-normalize v3.0.1 | MIT License | https://github.com/sindresorhus/modern-normalize */
+
+/*
+Document
+========
+*/
+
+/**
+Use a better box model (opinionated).
+*/
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+html {
+	/* Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3) */
+	font-family:
+		system-ui,
+		'Segoe UI',
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif,
+		'Apple Color Emoji',
+		'Segoe UI Emoji';
+	line-height: 1.15; /* 1. Correct the line height in all browsers. */
+	-webkit-text-size-adjust: 100%; /* 2. Prevent adjustments of font size after orientation changes in iOS. */
+	tab-size: 4; /* 3. Use a more readable tab size (opinionated). */
+}
+
+/*
+Sections
+========
+*/
+
+body {
+	margin: 0; /* Remove the margin in all browsers. */
+}
+
+/*
+Text-level semantics
+====================
+*/
+
+/**
+Add the correct font weight in Chrome and Safari.
+*/
+
+b,
+strong {
+	font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+	font-family:
+		ui-monospace,
+		SFMono-Regular,
+		Consolas,
+		'Liberation Mono',
+		Menlo,
+		monospace; /* 1 */
+	font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+
+small {
+	font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+
+/**
+Correct table border color inheritance in Chrome and Safari. (https://issues.chromium.org/issues/40615503, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+
+table {
+	border-color: currentcolor;
+}
+
+/*
+Forms
+=====
+*/
+
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit; /* 1 */
+	font-size: 100%; /* 1 */
+	line-height: 1.15; /* 1 */
+	margin: 0; /* 2 */
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+	-webkit-appearance: button;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+
+legend {
+	padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+	vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+	-webkit-appearance: textfield; /* 1 */
+	outline-offset: -2px; /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button; /* 1 */
+	font: inherit; /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+	display: list-item;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("/rsschool-landing-page/assets/Inter-VariableFont_opsz_wght-BtFs5cFQ.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("/rsschool-landing-page/assets/Inter-Italic-VariableFont_opsz_wght-C9UHaEYJ.woff2")
+    format("woff2");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  /* Colors */
+  --color-text-primary: #403f3d;
+  --color-text-inverse: #e1d4c9;
+  --color-text-accent: #b0907a;
+  --color-bg-page: #e1d4c9;
+  --color-bg-container: #665f55;
+  --color-bg-overlay: #403f3dcc;
+  --color-border-primary: #c1b6ad;
+  --color-border-inverse: #665f55;
+
+  /* Typography */
+  --font-family-main: "Inter", sans-serif;
+  --font-size-body: 1rem;
+  --font-size-h1: 4.5rem;
+  --font-size-h2: 3.75rem;
+  --font-size-h3: 1.5rem;
+  --font-size-caption: 0.625rem;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --line-height-body: 1.5;
+  --line-height-h1: 1.05;
+  --line-height-h2: 1.25;
+  --line-height-h3: 1.25;
+  --line-height-caption: 1.4;
+
+  /* Width */
+  --max-width-container: 1440px;
+  --container-padding: 2.5rem;
+
+  /* Shape */
+  --radius-small: 20px;
+  --radius-large: 40px;
+  --radius-round: 100px;
+
+  /* Spacing */
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 20px;
+  --space-xl: 24px;
+  --space-2xl: 40px;
+  --space-3xl: 100px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family-main);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-body);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-page);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+section {
+  margin-bottom: 100px;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+.container {
+  max-width: var(--max-width-container);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+}
+
+.header {
+  padding-block: var(--space-lg);
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation__list {
+  display: flex;
+  gap: var(--space-2xl);
+}
+
+.navigation__link,
+.menu-link,
+.button-link {
+  font-weight: var(--font-weight-semibold);
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+.menu-link,
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.theme-toggle {
+  background: transparent;
+  border-radius: var(--radius-round);
+  padding: 3px;
+  border: 1px solid var(--color-border-primary);
+}
+
+.icon {
+  display: block;
+  width: 22px;
+  height: 22px;
+}
+
+.theme-toggle__icon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle__icon--sun {
+  color: var(--color-text-inverse);
+}
+
+.theme-toggle__icon--active {
+  background: var(--color-text-accent);
+}
+
+.theme-toggle__icon--moon {
+  background: transparent;
+  color: var(--color-text-primary);
+}
+
+.hero__inner {
+  border-radius: var(--radius-large);
+  background: url("/rsschool-landing-page/assets/hero-vVOD58uY.jpg") center / cover no-repeat;
+  min-height: 644px;
+  padding: var(--space-3xl) clamp(60px, 8%, var(--space-3xl));
+}
+
+.hero__content {
+  max-width: 530px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+}
+
+.hero__title {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-h1);
+  color: var(--color-text-inverse);
+}
+
+.accent {
+  color: var(--color-text-accent);
+  font-style: italic;
+}
+
+.hero__text {
+  color: var(--color-text-inverse);
+}
+
+.button-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+  min-width: 200px;
+  padding: var(--space-lg) var(--space-xl);
+  background: var(--color-bg-page);
+  border-radius: var(--radius-round);
+  transition: all 0.3s ease;
+}
+
+.favorites__title,
+.about__title,
+.mobile-app__title,
+.social-media__title {
+  text-align: center;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-h2);
+  margin-bottom: var(--space-2xl);
+}
+
+.favorites__card-title,
+.favorites__price,
+.contacts__title {
+  text-align: center;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-h3);
+}
+
+.favorites__slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.favorites__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+  max-width: 480px;
+}
+
+.favorites__text {
+  text-align: center;
+}
+
+.round-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  aspect-ratio: 1/1;
+  background: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--color-bg-container);
+  color: var(--color-text-primary);
+  transition: all 0.3s ease;
+}
+
+.arrow-button .icon {
+  width: 14px;
+  height: 14px;
+}
+
+.favorites__pagination {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-sm);
+}
+
+.favorites__indicator {
+  width: 40px;
+  height: 4px;
+  background-color: var(--color-border-primary);
+  border-radius: var(--radius-round);
+  margin-top: var(--space-2xl);
+}
+
+.favorites__indicator--active {
+  background-color: var(--color-bg-container);
+}
+
+.about__title {
+  text-align: left;
+}
+
+.about__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(440px, 100%), 1fr));
+  grid-template-rows: 430px 120px 430px;
+  grid-auto-rows: 430px 120px;
+  justify-content: center;
+  gap: var(--space-2xl);
+}
+
+.about__box {
+  width: 100%;
+  max-width: 660px;
+  justify-self: center;
+  border-radius: var(--radius-small);
+  overflow: hidden;
+}
+
+.about__box:nth-child(1) {
+  grid-row: 1/3;
+}
+
+.about__box:nth-child(2) {
+  grid-row: 3/4;
+}
+
+.about__box:nth-child(3) {
+  grid-row: span 1;
+}
+
+.about__box:nth-child(4) {
+  grid-row: span 2;
+}
+
+.about__image {
+  width: 100%;
+  height: 100%;
+  object-fit: none;
+}
+
+.mobile-app__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-3xl);
+}
+
+.mobile-app__info,
+.mobile-app__image {
+  flex: 1 1 420px;
+  max-width: 630px;
+}
+
+.mobile-app__title {
+  text-align: start;
+}
+
+.mobile-app__actions {
+  display: flex;
+  gap: var(--space-lg);
+  margin-top: var(--space-2xl);
+}
+
+.mobile-app__button {
+  border: 1px solid var(--color-bg-container);
+  gap: var(--space-xs);
+  padding: var(--space-sm) var(--space-lg);
+}
+
+.mobile-app__button-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.mobile-app__description {
+  font-size: var(--font-size-caption);
+  line-height: var(--line-height-caption);
+}
+
+.icon-app-store,
+.icon-google-play {
+  width: 36px;
+  height: 36px;
+}
+
+.footer {
+  margin-bottom: var(--space-2xl);
+}
+
+.footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3xl);
+  padding: var(--space-3xl) clamp(60px, 8%, var(--space-3xl));
+  background-color: var(--color-bg-container);
+  color: var(--color-text-inverse);
+  border-radius: var(--radius-large);
+}
+
+.footer__inner > * {
+  flex: 1 0 400px;
+}
+
+.social-media__title {
+  text-align: start;
+}
+
+.social-media__list {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.social-media__link {
+  color: inherit;
+  border-color: var(--color-border-primary);
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+  align-items: flex-start;
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.contacts__link {
+  font-weight: var(--font-weight-semibold);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.navigation__link,
+.menu-link,
+.contacts__link {
+  position: relative;
+}
+
+:where(.navigation__link, .menu-link, .contacts__link)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background-color: currentcolor;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+:where(.navigation__link, .menu-link, .contacts__link):hover::after {
+  transform: scaleX(1);
+}
+
+:where(.arrow-button, .mobile-app__button):hover {
+  background: var(--color-bg-container);
+  color: var(--color-text-inverse);
+}
+
+.social-media__link:hover {
+  background: var(--color-text-inverse);
+  color: var(--color-text-primary);
+}
+
+.theme-toggle__icon:not(.theme-toggle__icon--active):hover {
+  background: var(--color-border-inverse);
+  color: var(--color-text-inverse);
+}
+
+.hero__button-icon {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.hero__button-text {
+  transform: translateX(10px);
+  transition: transform 0.5s ease;
+}
+
+.hero__button:hover .hero__button-icon {
+  opacity: 1;
+}
+
+.hero__button:hover .hero__button-text {
+  transform: translateX(-2px);
+}
