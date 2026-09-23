@@ -8,12 +8,14 @@ Layout: [Coffee House](https://www.figma.com/design/yuc5s9NCc4jENkk5LdFfvX/Coffe
 ## Tech Stack
 
 - HTML5
-- modern CSS
-- Vanilla JavaScript
+- CSS
+- JavaScript
 - Vite
 - modern-normalize
 - ESLint
+- Stylelint
 - Prettier
+- Husky
 
 ## Features
 
@@ -28,9 +30,13 @@ Layout: [Coffee House](https://www.figma.com/design/yuc5s9NCc4jENkk5LdFfvX/Coffe
 
 ## Development
 
+```bash
 npm install
 npm run dev
+```
 
 ## Production
 
+```bash
 npm run build
+```
