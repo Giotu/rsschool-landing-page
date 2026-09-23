@@ -8,6 +8,13 @@
   justify-content: space-between;
 }
 
+.icon-logo {
+  display: block;
+  width: 100px;
+  height: 60px;
+  color: var(--color-text-primary);
+}
+
 .navigation__list {
   display: flex;
   gap: var(--space-2xl);

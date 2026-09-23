@@ -42,3 +42,14 @@
   --space-2xl: 40px;
   --space-3xl: 100px;
 }
+
+:root[data-theme="dark"] {
+  --color-text-primary: #e1d4c9;
+  --color-text-inverse: #e1d4c9;
+  --color-text-accent: #b0907a;
+  --color-bg-page: #292826;
+  --color-bg-container: #403f3d;
+  --color-bg-overlay: #292826cc;
+  --color-border-primary: #665f55;
+  --color-border-inverse: #c1b6ad;
+}
