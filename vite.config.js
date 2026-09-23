@@ -7,7 +7,10 @@ export default defineConfig({
     minify: false,
     sourcemap: true,
   },
-
+  input: {
+    main: "index.html",
+    menu: "menu.html",
+  },
   css: {
     devSourcemap: true,
   },

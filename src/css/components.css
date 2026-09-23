@@ -113,7 +113,8 @@
 .favorites__title,
 .about__title,
 .mobile-app__title,
-.social-media__title {
+.social-media__title,
+.menu__title {
   text-align: center;
   font-weight: var(--font-weight-semibold);
   font-size: var(--font-size-h2);
@@ -123,7 +124,9 @@
 
 .favorites__card-title,
 .favorites__price,
-.contacts__title {
+.contacts__title,
+.card__title,
+.card__price {
   text-align: center;
   font-weight: var(--font-weight-semibold);
   font-size: var(--font-size-h3);
@@ -381,4 +384,87 @@
 
 .hero__button:hover .hero__button-text {
   transform: translateX(-2px);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2xl);
+}
+
+.menu__title {
+  max-width: 800px;
+  margin-bottom: 0;
+}
+
+.menu__switch {
+  display: flex;
+  gap: var(--space-md);
+}
+
+.button-switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-xs) var(--space-md) var(--space-xs) var(--space-xs);
+  gap: var(--space-xs);
+  border-radius: var(--radius-round);
+  background: transparent;
+  border: 1px solid var(--color-border-primary);
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-semibold);
+}
+
+.button-switch--active {
+  background: var(--color-bg-container);
+  color: var(--color-text-inverse);
+}
+
+.button-image__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background: var(--color-border-primary);
+  border-radius: 50%;
+}
+
+.button-switch--active > .button-image__wrapper {
+  background: var(--color-text-inverse);
+}
+
+.card__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2xl);
+  justify-content: center;
+}
+
+.card__item {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  max-width: 310px;
+  border-radius: var(--radius-large);
+  border: 1px solid var(--color-border-primary);
+}
+
+.card-image__wrapper {
+  overflow: hidden;
+  border-radius: var(--radius-large);
+}
+
+.card__description {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  padding: var(--space-lg);
+}
+
+.card__price {
+  margin-top: auto;
 }
