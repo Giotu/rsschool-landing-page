@@ -1,31 +1,42 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/rsschool-landing-page/assets/logo-BaSA1cE4.svg" />
+    <script>
+      const savedTheme = localStorage.getItem("theme");
+
+      if (savedTheme) {
+        document.documentElement.dataset.theme = savedTheme;
+      }
+    </script>
     <title>Coffee House</title>
-    <link rel="stylesheet" crossorigin href="/rsschool-landing-page/assets/index-Boa4u-N7.css">
+    <script type="module" crossorigin src="/rsschool-landing-page/assets/main-TWsxpitz.js"></script>
+    <link rel="stylesheet" crossorigin href="/rsschool-landing-page/assets/main-DK21VWln.css">
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="header__inner">
-          <a href="/" class="header__logo">
-            <img src="/rsschool-landing-page/assets/logo-BaSA1cE4.svg" alt="Coffee House" />
+          <a href="./index.html" class="header__logo">
+            <svg class="icon-logo">
+              <use href="/rsschool-landing-page/assets/sprite-DGWOKyU5.svg#icon-logo"></use>
+            </svg>
           </a>
           <nav class="navigation">
             <ul class="navigation__list">
               <li class="navigation__item">
-                <a href="" class="navigation__link">Favorite coffee</a>
+                <a href="#favorite" class="navigation__link">Favorite coffee</a>
               </li>
               <li class="navigation__item">
-                <a href="" class="navigation__link">About</a>
+                <a href="#about" class="navigation__link">About</a>
               </li>
               <li class="navigation__item">
-                <a href="" class="navigation__link">Mobile app</a>
+                <a href="#mobile-app" class="navigation__link">Mobile app</a>
               </li>
               <li class="navigation__item">
-                <a href="" class="navigation__link">Contact us</a>
+                <a href="#contact" class="navigation__link">Contact us</a>
               </li>
             </ul>
           </nav>
@@ -39,23 +50,23 @@
                 class="theme-toggle__icon theme-toggle__icon--active theme-toggle__icon--sun"
               >
                 <svg class="icon">
-                  <use href="/rsschool-landing-page/assets/sprite-R1xo8sZj.svg#icon-sun"></use>
+                  <use href="/rsschool-landing-page/assets/sprite-DGWOKyU5.svg#icon-sun"></use>
                 </svg>
               </span>
 
               <span class="theme-toggle__icon theme-toggle__icon--moon">
                 <svg class="icon">
-                  <use href="/rsschool-landing-page/assets/sprite-R1xo8sZj.svg#icon-moon"></use>
+                  <use href="/rsschool-landing-page/assets/sprite-DGWOKyU5.svg#icon-moon"></use>
                 </svg>
               </span>
             </button>
-            <a href="" class="menu-link"
+            <a href="./menu.html" class="menu-link"
               ><span>Menu</span>
-              <img
-                src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M14.167%209.76667V11.6667C14.167%2014.8883%2011.5553%2017.5%208.33366%2017.5C5.112%2017.5%202.50033%2014.8883%202.50033%2011.6667V9.76667C2.50033%209.4353%202.76896%209.16667%203.10033%209.16667H13.567C13.8984%209.16667%2014.167%209.4353%2014.167%209.76667Z'%20stroke='%23403F3D'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M10.0003%207.50008C10.0003%206.66675%2010.5956%205.83341%2011.786%205.83341C13.101%205.83341%2014.167%204.76743%2014.167%203.45246V2.91675'%20stroke='%23403F3D'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M6.66634%207.5V7.08333C6.66634%205.70262%207.78563%204.58333%209.16634%204.58333C10.0868%204.58333%2010.833%203.83714%2010.833%202.91667V2.5'%20stroke='%23403F3D'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M13.333%209.16675H15.4163C16.5669%209.16675%2017.4997%2010.0995%2017.4997%2011.2501C17.4997%2012.4007%2016.5669%2013.3334%2015.4163%2013.3334H14.1663'%20stroke='%23403F3D'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"
-                alt="Menu"
-                class="menu-logo"
-              />
+              <svg class="icon">
+                <use
+                  href="/rsschool-landing-page/assets/sprite-DGWOKyU5.svg#icon-coffee-cup"
+                ></use>
+              </svg>
             </a>
           </div>
         </div>
@@ -78,17 +89,17 @@
               </p>
               <a href="" class="button-link hero__button"
                 ><span class="hero__button-text">Menu</span>
-                <img
-                  src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M14.167%209.76667V11.6667C14.167%2014.8883%2011.5553%2017.5%208.33366%2017.5C5.112%2017.5%202.50033%2014.8883%202.50033%2011.6667V9.76667C2.50033%209.4353%202.76896%209.16667%203.10033%209.16667H13.567C13.8984%209.16667%2014.167%209.4353%2014.167%209.76667Z'%20stroke='%23403F3D'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M10.0003%207.50008C10.0003%206.66675%2010.5956%205.83341%2011.786%205.83341C13.101%205.83341%2014.167%204.76743%2014.167%203.45246V2.91675'%20stroke='%23403F3D'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M6.66634%207.5V7.08333C6.66634%205.70262%207.78563%204.58333%209.16634%204.58333C10.0868%204.58333%2010.833%203.83714%2010.833%202.91667V2.5'%20stroke='%23403F3D'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M13.333%209.16675H15.4163C16.5669%209.16675%2017.4997%2010.0995%2017.4997%2011.2501C17.4997%2012.4007%2016.5669%2013.3334%2015.4163%2013.3334H14.1663'%20stroke='%23403F3D'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"
-                  alt=""
-                  class="hero__button-icon"
-                />
+                <svg class="icon hero__button-icon">
+                  <use
+                    href="/rsschool-landing-page/assets/sprite-DGWOKyU5.svg#icon-coffee-cup"
+                  ></use>
+                </svg>
               </a>
             </div>
           </div>
         </div>
       </section>
-      <section class="favorites">
+      <section class="favorites" id="favorite">
         <div class="container">
           <h2 class="favorites__title">
             Choose your <span class="accent">favorite</span> coffee
@@ -96,14 +107,14 @@
           <div class="favorites__slider">
             <button class="round-button arrow-button favorites__button--prev">
               <svg class="icon">
-                <use href="/rsschool-landing-page/assets/sprite-R1xo8sZj.svg#icon-prev"></use>
+                <use href="/rsschool-landing-page/assets/sprite-DGWOKyU5.svg#icon-prev"></use>
               </svg>
             </button>
 
             <article class="favorites__card">
               <img
                 src="/rsschool-landing-page/assets/S%E2%80%99mores%20Frappuccino-mxe-wPsS.png"
-                alt=""
+                alt="S’mores Frappuccino"
                 class="favorites__image"
               />
               <h3 class="favorites__card-title">S’mores Frappuccino</h3>
@@ -116,7 +127,7 @@
 
             <button class="round-button arrow-button favorites__button--next">
               <svg class="icon">
-                <use href="/rsschool-landing-page/assets/sprite-R1xo8sZj.svg#icon-next"></use>
+                <use href="/rsschool-landing-page/assets/sprite-DGWOKyU5.svg#icon-next"></use>
               </svg>
             </button>
           </div>
@@ -129,7 +140,7 @@
           </div>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
           <h2 class="about__title">
             Resource is
@@ -142,34 +153,34 @@
               <img
                 src="/rsschool-landing-page/assets/about-1-DfXlmDp7.jpg"
                 class="about__image"
-                alt=""
+                alt="A young woman is sitting in a café and enjoying her coffee."
               />
             </div>
             <div class="about__box">
               <img
                 src="/rsschool-landing-page/assets/about-2-CP7h7OQT.jpg"
                 class="about__image"
-                alt=""
+                alt="A mug of coffee on the table"
               />
             </div>
             <div class="about__box">
               <img
                 src="/rsschool-landing-page/assets/about-3-BgVRTDqL.jpg"
                 class="about__image"
-                alt=""
+                alt="A man is sitting at a laptop with a mug of coffee."
               />
             </div>
             <div class="about__box">
               <img
                 src="/rsschool-landing-page/assets/about-4-CvsXWmsT.jpg"
                 class="about__image"
-                alt=""
+                alt="A couple in love is enjoying coffee."
               />
             </div>
           </div>
         </div>
       </section>
-      <section class="mobile-app">
+      <section class="mobile-app" id="mobile-app">
         <div class="container">
           <div class="mobile-app__inner">
             <div class="mobile-app__info">
@@ -184,7 +195,7 @@
                 <a href="" class="button-link mobile-app__button">
                   <svg class="icon icon-app-store">
                     <use
-                      href="/rsschool-landing-page/assets/sprite-R1xo8sZj.svg#icon-app-store"
+                      href="/rsschool-landing-page/assets/sprite-DGWOKyU5.svg#icon-app-store"
                     ></use>
                   </svg>
                   <div class="mobile-app__button-info">
@@ -197,7 +208,7 @@
                 <a href="" class="button-link mobile-app__button">
                   <svg class="icon icon-google-play">
                     <use
-                      href="/rsschool-landing-page/assets/sprite-R1xo8sZj.svg#icon-google-play"
+                      href="/rsschool-landing-page/assets/sprite-DGWOKyU5.svg#icon-google-play"
                     ></use>
                   </svg>
                   <div class="mobile-app__button-info">
@@ -209,14 +220,14 @@
             </div>
             <img
               src="/rsschool-landing-page/assets/mobile-screens-pevenitR.png"
-              alt=""
+              alt="Mobile"
               class="mobile-app__image"
             />
           </div>
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contact">
       <div class="container">
         <div class="footer__inner">
           <div class="social-media">
@@ -228,7 +239,7 @@
                 <a href="" class="round-button social-media__link">
                   <svg class="icon">
                     <use
-                      href="/rsschool-landing-page/assets/sprite-R1xo8sZj.svg#icon-twitter"
+                      href="/rsschool-landing-page/assets/sprite-DGWOKyU5.svg#icon-twitter"
                     ></use>
                   </svg>
                 </a>
@@ -237,7 +248,7 @@
                 <a href="" class="round-button social-media__link">
                   <svg class="icon">
                     <use
-                      href="/rsschool-landing-page/assets/sprite-R1xo8sZj.svg#icon-instagram"
+                      href="/rsschool-landing-page/assets/sprite-DGWOKyU5.svg#icon-instagram"
                     ></use>
                   </svg>
                 </a>
@@ -246,7 +257,7 @@
                 <a href="" class="round-button social-media__link">
                   <svg class="icon">
                     <use
-                      href="/rsschool-landing-page/assets/sprite-R1xo8sZj.svg#icon-facebook"
+                      href="/rsschool-landing-page/assets/sprite-DGWOKyU5.svg#icon-facebook"
                     ></use>
                   </svg>
                 </a>
@@ -259,7 +270,7 @@
               <li class="contacts__item">
                 <a href="" class="contacts__link">
                   <svg class="icon">
-                    <use href="/rsschool-landing-page/assets/sprite-R1xo8sZj.svg#icon-map"></use>
+                    <use href="/rsschool-landing-page/assets/sprite-DGWOKyU5.svg#icon-map"></use>
                   </svg>
                   8558 Green Rd., LA
                 </a>
@@ -267,7 +278,7 @@
               <li class="contacts__item">
                 <a href="" class="contacts__link">
                   <svg class="icon">
-                    <use href="/rsschool-landing-page/assets/sprite-R1xo8sZj.svg#icon-phone"></use>
+                    <use href="/rsschool-landing-page/assets/sprite-DGWOKyU5.svg#icon-phone"></use>
                   </svg>
                   +1 (603) 555-0123
                 </a>
@@ -275,7 +286,7 @@
               <li class="contacts__item">
                 <span href="" class="contacts__link">
                   <svg class="icon">
-                    <use href="/rsschool-landing-page/assets/sprite-R1xo8sZj.svg#icon-time"></use>
+                    <use href="/rsschool-landing-page/assets/sprite-DGWOKyU5.svg#icon-time"></use>
                   </svg>
                   Mon–Sat: 9:00–23:00
                 </span>
