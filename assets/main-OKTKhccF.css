@@ -243,8 +243,8 @@ summary {
   /* Typography */
   --font-family-main: "Inter", sans-serif;
   --font-size-body: 1rem;
-  --font-size-h1: 4.5rem;
-  --font-size-h2: 3.75rem;
+  --font-size-h1: clamp(2.625rem, calc(8.746vw + 4.83px), 4.5rem);
+  --font-size-h2: clamp(2rem, calc(8.163vw - 2.69px), 3.75rem);
   --font-size-h3: 1.5rem;
   --font-size-caption: 0.625rem;
   --font-weight-regular: 400;
@@ -254,10 +254,11 @@ summary {
   --line-height-h2: 1.25;
   --line-height-h3: 1.25;
   --line-height-caption: 1.4;
+  --line-height-h1-mobile: 1.15;
 
   /* Width */
   --max-width-container: 1440px;
-  --container-padding: 2.5rem;
+  --container-padding: clamp(1rem, calc(6.9791vw - 13.673px), 2.5rem);
 
   /* Shape */
   --radius-small: 20px;
@@ -415,10 +416,31 @@ button {
   background: var(--color-text-accent);
 }
 
+.button-burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: 1px solid var(--color-bg-container);
+  border-radius: 50%;
+}
+
+.button-burger::after,
+.button-burger::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 18px;
+  background: var(--color-text-primary);
+}
+
 .hero__inner {
   border-radius: var(--radius-large);
   background: url("/rsschool-landing-page/assets/hero-vVOD58uY.jpg") center / cover no-repeat;
-  min-height: 644px;
   padding: var(--space-3xl) clamp(60px, 8%, var(--space-3xl));
 }
 
@@ -597,7 +619,8 @@ button {
 
 .mobile-app__info,
 .mobile-app__image {
-  flex: 1 1 420px;
+  flex: 1 1 0;
+  width: 100%;
   max-width: 630px;
 }
 
@@ -855,4 +878,62 @@ button {
 
 .card__price {
   margin-top: auto;
+}
+
+@media (width <= 900px) {
+  .navigation {
+    display: none;
+  }
+
+  .footer__inner > * {
+    flex: 0 1 530px;
+  }
+}
+
+@media (width <= 768px) {
+  .button-burger {
+    display: flex;
+  }
+
+  .menu-link {
+    display: none;
+  }
+
+  .about__content {
+    grid-auto-rows: 120px;
+  }
+
+  .about__box:nth-child(2),
+  .about__box:nth-child(3) {
+    display: none;
+  }
+}
+
+@media (width <= 720px) {
+  .hero__inner,
+  .footer__inner {
+    padding: 60px 16px;
+  }
+
+  .hero__title {
+    line-height: var(--line-height-h1-mobile);
+  }
+
+  .arrow-button {
+    display: none;
+  }
+
+  .mobile-app__inner,
+  .footer__inner {
+    gap: var(--space-2xl);
+  }
+
+  .mobile-app__actions {
+    gap: var(--space-2xl);
+    flex-direction: column;
+  }
+
+  .menu__switch {
+    gap: var(--space-xs);
+  }
 }
