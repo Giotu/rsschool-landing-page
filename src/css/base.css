@@ -1,0 +1,44 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family-main);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-body);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-page);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+section {
+  margin-bottom: 100px;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}

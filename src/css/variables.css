@@ -1,0 +1,56 @@
+:root {
+  /* Colors */
+  --color-text-primary: #403f3d;
+  --color-text-inverse: #e1d4c9;
+  --color-text-accent: #b0907a;
+  --color-bg-page: #e1d4c9;
+  --color-bg-container: #665f55;
+  --color-bg-overlay: #403f3dcc;
+  --color-border-primary: #c1b6ad;
+  --color-border-inverse: #665f55;
+
+  /* Typography */
+  --font-family-main: "Inter", sans-serif;
+  --font-size-body: 1rem;
+  --font-size-h1: clamp(2.625rem, calc(8.746vw + 4.83px), 4.5rem);
+  --font-size-h2: clamp(2rem, calc(8.163vw - 2.69px), 3.75rem);
+  --font-size-h3: 1.5rem;
+  --font-size-caption: 0.625rem;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --line-height-body: 1.5;
+  --line-height-h1: 1.05;
+  --line-height-h2: 1.25;
+  --line-height-h3: 1.25;
+  --line-height-caption: 1.4;
+  --line-height-h1-mobile: 1.15;
+
+  /* Width */
+  --max-width-container: 1440px;
+  --container-padding: clamp(1rem, calc(6.9791vw - 13.673px), 2.5rem);
+
+  /* Shape */
+  --radius-small: 20px;
+  --radius-large: 40px;
+  --radius-round: 100px;
+
+  /* Spacing */
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 20px;
+  --space-xl: 24px;
+  --space-2xl: 40px;
+  --space-3xl: 100px;
+}
+
+:root[data-theme="dark"] {
+  --color-text-primary: #e1d4c9;
+  --color-text-inverse: #e1d4c9;
+  --color-text-accent: #b0907a;
+  --color-bg-page: #292826;
+  --color-bg-container: #403f3d;
+  --color-bg-overlay: #292826cc;
+  --color-border-primary: #665f55;
+  --color-border-inverse: #c1b6ad;
+}
