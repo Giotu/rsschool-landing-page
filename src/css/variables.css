@@ -12,12 +12,10 @@
   /* Typography */
   --font-family-main: "Inter", sans-serif;
   --font-size-body: 1rem;
-  --font-size-h1: 4.5rem;
-  --font-size-h2: 3.75rem;
+  --font-size-h1: clamp(2.625rem, calc(8.746vw + 4.83px), 4.5rem);
+  --font-size-h2: clamp(2rem, calc(8.163vw - 2.69px), 3.75rem);
   --font-size-h3: 1.5rem;
   --font-size-caption: 0.625rem;
-  --font-size-h1-mobile: 2.625rem;
-  --font-size-h2-mobile: 2rem;
   --font-weight-regular: 400;
   --font-weight-semibold: 600;
   --line-height-body: 1.5;
@@ -29,7 +27,7 @@
 
   /* Width */
   --max-width-container: 1440px;
-  --container-padding: 2.5rem;
+  --container-padding: clamp(1rem, calc(6.9791vw - 13.673px), 2.5rem);
 
   /* Shape */
   --radius-small: 20px;
