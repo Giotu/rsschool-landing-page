@@ -77,6 +77,28 @@
   background: var(--color-text-accent);
 }
 
+.button-burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: 1px solid var(--color-bg-container);
+  border-radius: 50%;
+}
+
+.button-burger::after,
+.button-burger::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 18px;
+  background: var(--color-text-primary);
+}
+
 .hero__inner {
   border-radius: var(--radius-large);
   background: url("../assets/images/hero.jpg") center / cover no-repeat;
@@ -517,4 +539,33 @@
 
 .card__price {
   margin-top: auto;
+}
+
+@media (width <= 900px) {
+  .navigation {
+    display: none;
+  }
+
+  .footer__inner > * {
+    flex: 0 1 530px;
+  }
+}
+
+@media (width<=768px) {
+  .button-burger {
+    display: flex;
+  }
+
+  .menu-link {
+    display: none;
+  }
+
+  .about__content {
+    grid-auto-rows: 120px;
+  }
+
+  .about__box:nth-child(2),
+  .about__box:nth-child(3) {
+    display: none;
+  }
 }

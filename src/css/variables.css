@@ -16,6 +16,8 @@
   --font-size-h2: 3.75rem;
   --font-size-h3: 1.5rem;
   --font-size-caption: 0.625rem;
+  --font-size-h1-mobile: 2.625rem;
+  --font-size-h2-mobile: 2rem;
   --font-weight-regular: 400;
   --font-weight-semibold: 600;
   --line-height-body: 1.5;
@@ -23,6 +25,7 @@
   --line-height-h2: 1.25;
   --line-height-h3: 1.25;
   --line-height-caption: 1.4;
+  --line-height-h1-mobile: 1.15;
 
   /* Width */
   --max-width-container: 1440px;
