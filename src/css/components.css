@@ -20,6 +20,10 @@
   gap: var(--space-2xl);
 }
 
+.navigation__item--menu {
+  display: none;
+}
+
 .navigation__link,
 .menu-link,
 .button-link {
@@ -78,25 +82,33 @@
 }
 
 .button-burger {
+  position: relative;
   display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 6px;
   width: 44px;
   height: 44px;
+  align-items: center;
+  justify-content: center;
   background: transparent;
   border: 1px solid var(--color-bg-container);
   border-radius: 50%;
 }
 
-.button-burger::after,
-.button-burger::before {
+.button-burger::before,
+.button-burger::after {
   content: "";
-  display: block;
-  height: 2px;
+  position: absolute;
   width: 18px;
+  height: 2px;
   background: var(--color-text-primary);
+  transition: transform 0.3s ease;
+}
+
+.button-burger::before {
+  transform: translateY(-4px);
+}
+
+.button-burger::after {
+  transform: translateY(4px);
 }
 
 .hero__inner {
@@ -557,7 +569,11 @@
 
 @media (width <= 900px) {
   .navigation {
-    display: none;
+    font-size: 14px;
+  }
+
+  .navigation__list {
+    gap: var(--space-md);
   }
 
   .footer__inner > * {
@@ -566,12 +582,61 @@
 }
 
 @media (width <= 768px) {
+  .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: var(--header-height);
+    bottom: 0;
+    background: var(--color-bg-page);
+    z-index: 1000;
+    transform: translateX(100%);
+    opacity: 0;
+    transition:
+      transform 0.5s ease,
+      opacity 0.5s ease;
+  }
+
+  .navigation--open {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  body.menu-open {
+    overflow: hidden;
+  }
+
+  .navigation__list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: var(--font-weight-semibold);
+    font-size: 32px;
+    line-height: var(--line-height-h3);
+    gap: 60px;
+  }
+
+  .menu-link--desktop {
+    display: none;
+  }
+
+  .navigation__item--menu {
+    display: block;
+  }
+
   .button-burger {
     display: flex;
   }
 
-  .menu-link {
-    display: none;
+  .button-burger--open::before {
+    transform: rotate(45deg);
+  }
+
+  .button-burger--open::after {
+    transform: rotate(-45deg);
   }
 
   .about__content {

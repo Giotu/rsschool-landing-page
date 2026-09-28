@@ -5,8 +5,8 @@ const firstIndex = 0;
 const lastIndex = track.children.length - 1;
 const indicators = document.querySelector(".favorites__pagination").children;
 
-let coordX = null;
-let coordY = null;
+let startX = null;
+let startY = null;
 
 let currentIndex = firstIndex;
 
@@ -30,13 +30,13 @@ function goToSlide(newIndex) {
 }
 
 function handleTouchStart(event) {
-  coordX = event.touches[0].clientX;
-  coordY = event.touches[0].clientY;
+  startX = event.touches[0].clientX;
+  startY = event.touches[0].clientY;
 }
 
 function handleTouchEnd(event) {
-  const diffX = event.changedTouches[0].clientX - coordX;
-  const diffY = event.changedTouches[0].clientY - coordY;
+  const diffX = event.changedTouches[0].clientX - startX;
+  const diffY = event.changedTouches[0].clientY - startY;
   const distance = 35;
 
   if (Math.abs(diffY) > Math.abs(diffX)) return;
