@@ -244,7 +244,7 @@
 }
 
 .favorites__indicator--active {
-  background-color: var(--color-bg-container);
+  background-color: var(--color-border-inverse);
 }
 
 .about__title {

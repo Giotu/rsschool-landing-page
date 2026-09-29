@@ -15,7 +15,7 @@ function createCard(product) {
   card.innerHTML = `<div class="card-image__wrapper">
     <img
       class="card__image"
-      src="./src/assets/images/${product.image}"
+      src="${import.meta.env.BASE_URL}/images/menu/${product.image}"
       alt="${product.name}"
       />
     </div>
