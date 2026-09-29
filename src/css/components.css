@@ -529,6 +529,11 @@
   flex-wrap: wrap;
   gap: var(--space-2xl);
   justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+.card__list--changing {
+  opacity: 0;
 }
 
 .card__item {
@@ -676,4 +681,8 @@
   .menu__switch {
     gap: var(--space-xs);
   }
+}
+
+.load-more--hidden {
+  display: none;
 }
