@@ -12,8 +12,9 @@
       }
     </script>
     <title>Coffee House</title>
-    <script type="module" crossorigin src="/rsschool-landing-page/assets/main-BdlJdDyC.js"></script>
-    <link rel="stylesheet" crossorigin href="/rsschool-landing-page/assets/main-OKTKhccF.css">
+    <script type="module" crossorigin src="/rsschool-landing-page/assets/main-BdeFeKDS.js"></script>
+    <link rel="modulepreload" crossorigin href="/rsschool-landing-page/assets/burger-7VJDZxv9.js">
+    <link rel="stylesheet" crossorigin href="/rsschool-landing-page/assets/burger-BB2izg1W.css">
   </head>
   <body>
     <header class="header">
@@ -21,7 +22,7 @@
         <div class="header__inner">
           <a href="./index.html" class="header__logo">
             <svg class="icon-logo">
-              <use href="/rsschool-landing-page/assets/sprite-DGWOKyU5.svg#icon-logo"></use>
+              <use href="/rsschool-landing-page/assets/sprite-Dqzdf_Op.svg#icon-logo"></use>
             </svg>
           </a>
           <nav class="navigation">
@@ -38,6 +39,16 @@
               <li class="navigation__item">
                 <a href="#contact" class="navigation__link">Contact us</a>
               </li>
+              <li class="navigation__item navigation__item--menu">
+                <a href="./menu.html" class="menu-link"
+                  ><span>Menu</span>
+                  <svg class="icon">
+                    <use
+                      href="/rsschool-landing-page/assets/sprite-Dqzdf_Op.svg#icon-coffee-cup"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
             </ul>
           </nav>
           <div class="header__actions">
@@ -50,21 +61,21 @@
                 class="theme-toggle__icon theme-toggle__icon--active theme-toggle__icon--sun"
               >
                 <svg class="icon">
-                  <use href="/rsschool-landing-page/assets/sprite-DGWOKyU5.svg#icon-sun"></use>
+                  <use href="/rsschool-landing-page/assets/sprite-Dqzdf_Op.svg#icon-sun"></use>
                 </svg>
               </span>
 
               <span class="theme-toggle__icon theme-toggle__icon--moon">
                 <svg class="icon">
-                  <use href="/rsschool-landing-page/assets/sprite-DGWOKyU5.svg#icon-moon"></use>
+                  <use href="/rsschool-landing-page/assets/sprite-Dqzdf_Op.svg#icon-moon"></use>
                 </svg>
               </span>
             </button>
-            <a href="./menu.html" class="menu-link"
+            <a href="./menu.html" class="menu-link menu-link--desktop"
               ><span>Menu</span>
               <svg class="icon">
                 <use
-                  href="/rsschool-landing-page/assets/sprite-DGWOKyU5.svg#icon-coffee-cup"
+                  href="/rsschool-landing-page/assets/sprite-Dqzdf_Op.svg#icon-coffee-cup"
                 ></use>
               </svg>
             </a>
@@ -92,7 +103,7 @@
                 ><span class="hero__button-text">Menu</span>
                 <svg class="icon hero__button-icon">
                   <use
-                    href="/rsschool-landing-page/assets/sprite-DGWOKyU5.svg#icon-coffee-cup"
+                    href="/rsschool-landing-page/assets/sprite-Dqzdf_Op.svg#icon-coffee-cup"
                   ></use>
                 </svg>
               </a>
@@ -108,27 +119,55 @@
           <div class="favorites__slider">
             <button class="round-button arrow-button favorites__button--prev">
               <svg class="icon">
-                <use href="/rsschool-landing-page/assets/sprite-DGWOKyU5.svg#icon-prev"></use>
+                <use href="/rsschool-landing-page/assets/sprite-Dqzdf_Op.svg#icon-prev"></use>
               </svg>
             </button>
-
-            <article class="favorites__card">
-              <img
-                src="/rsschool-landing-page/assets/frappuccino-mxe-wPsS.png"
-                alt="S’mores Frappuccino"
-                class="favorites__image"
-              />
-              <h3 class="favorites__card-title">S’mores Frappuccino</h3>
-              <p class="favorites__text">
-                This new drink takes an espresso and mixes it with brown sugar
-                and cinnamon before being topped with oat milk.
-              </p>
-              <p class="favorites__price">$5.50</p>
-            </article>
-
+            <div class="favorites__viewport">
+              <ul class="favorites__list">
+                <li class="favorites__card">
+                  <img
+                    src="/rsschool-landing-page/assets/frappuccino-mxe-wPsS.png"
+                    alt="S’mores Frappuccino"
+                    class="favorites__image"
+                  />
+                  <h3 class="favorites__card-title">S’mores Frappuccino</h3>
+                  <p class="favorites__text">
+                    This new drink takes an espresso and mixes it with brown
+                    sugar and cinnamon before being topped with oat milk.
+                  </p>
+                  <p class="favorites__price">$5.50</p>
+                </li>
+                <li class="favorites__card">
+                  <img
+                    src="/rsschool-landing-page/assets/macchiato-ne7ttB2Q.png"
+                    alt="S’mores Frappuccino"
+                    class="favorites__image"
+                  />
+                  <h3 class="favorites__card-title">Caramel Macchiato</h3>
+                  <p class="favorites__text">
+                    Fragrant and unique classic espresso with rich
+                    caramel-peanut syrup, with cream under whipped thick foam.
+                  </p>
+                  <p class="favorites__price">$5.00</p>
+                </li>
+                <li class="favorites__card">
+                  <img
+                    src="/rsschool-landing-page/assets/ice-coffee-IwvL9hAu.png"
+                    alt="S’mores Frappuccino"
+                    class="favorites__image"
+                  />
+                  <h3 class="favorites__card-title">Ice coffee</h3>
+                  <p class="favorites__text">
+                    A popular summer drink that tones and invigorates. Prepared
+                    from coffee, milk and ice.
+                  </p>
+                  <p class="favorites__price">$4.50</p>
+                </li>
+              </ul>
+            </div>
             <button class="round-button arrow-button favorites__button--next">
               <svg class="icon">
-                <use href="/rsschool-landing-page/assets/sprite-DGWOKyU5.svg#icon-next"></use>
+                <use href="/rsschool-landing-page/assets/sprite-Dqzdf_Op.svg#icon-next"></use>
               </svg>
             </button>
           </div>
@@ -196,7 +235,7 @@
                 <a href="#" class="button-link mobile-app__button">
                   <svg class="icon icon-app-store">
                     <use
-                      href="/rsschool-landing-page/assets/sprite-DGWOKyU5.svg#icon-app-store"
+                      href="/rsschool-landing-page/assets/sprite-Dqzdf_Op.svg#icon-app-store"
                     ></use>
                   </svg>
                   <div class="mobile-app__button-info">
@@ -209,7 +248,7 @@
                 <a href="#" class="button-link mobile-app__button">
                   <svg class="icon icon-google-play">
                     <use
-                      href="/rsschool-landing-page/assets/sprite-DGWOKyU5.svg#icon-google-play"
+                      href="/rsschool-landing-page/assets/sprite-Dqzdf_Op.svg#icon-google-play"
                     ></use>
                   </svg>
                   <div class="mobile-app__button-info">
@@ -243,7 +282,7 @@
                 >
                   <svg class="icon">
                     <use
-                      href="/rsschool-landing-page/assets/sprite-DGWOKyU5.svg#icon-twitter"
+                      href="/rsschool-landing-page/assets/sprite-Dqzdf_Op.svg#icon-twitter"
                     ></use>
                   </svg>
                 </a>
@@ -255,7 +294,7 @@
                 >
                   <svg class="icon">
                     <use
-                      href="/rsschool-landing-page/assets/sprite-DGWOKyU5.svg#icon-instagram"
+                      href="/rsschool-landing-page/assets/sprite-Dqzdf_Op.svg#icon-instagram"
                     ></use>
                   </svg>
                 </a>
@@ -267,7 +306,7 @@
                 >
                   <svg class="icon">
                     <use
-                      href="/rsschool-landing-page/assets/sprite-DGWOKyU5.svg#icon-facebook"
+                      href="/rsschool-landing-page/assets/sprite-Dqzdf_Op.svg#icon-facebook"
                     ></use>
                   </svg>
                 </a>
@@ -283,7 +322,7 @@
                   class="contacts__link"
                 >
                   <svg class="icon">
-                    <use href="/rsschool-landing-page/assets/sprite-DGWOKyU5.svg#icon-map"></use>
+                    <use href="/rsschool-landing-page/assets/sprite-Dqzdf_Op.svg#icon-map"></use>
                   </svg>
                   8558 Green Rd., LA
                 </a>
@@ -291,7 +330,7 @@
               <li class="contacts__item">
                 <a href="tel:+16035550123" class="contacts__link">
                   <svg class="icon">
-                    <use href="/rsschool-landing-page/assets/sprite-DGWOKyU5.svg#icon-phone"></use>
+                    <use href="/rsschool-landing-page/assets/sprite-Dqzdf_Op.svg#icon-phone"></use>
                   </svg>
                   +1 (603) 555-0123
                 </a>
@@ -299,7 +338,7 @@
               <li class="contacts__item">
                 <span class="contacts__link">
                   <svg class="icon">
-                    <use href="/rsschool-landing-page/assets/sprite-DGWOKyU5.svg#icon-time"></use>
+                    <use href="/rsschool-landing-page/assets/sprite-Dqzdf_Op.svg#icon-time"></use>
                   </svg>
                   Mon–Sat: 9:00–23:00
                 </span>
