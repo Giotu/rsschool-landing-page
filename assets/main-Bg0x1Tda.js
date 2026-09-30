@@ -1,4 +1,4 @@
-import "./burger-Cfozt-E7.js";
+import "./burger-uzwT1lGW.js";
 //#region src/js/slider.js
 var track = document.querySelector(".favorites__list");
 var btnPrev = document.querySelector(".favorites__button--prev");
@@ -46,4 +46,4 @@ track.addEventListener("touchstart", handleTouchStart);
 track.addEventListener("touchend", handleTouchEnd);
 //#endregion
 
-//# sourceMappingURL=main-zLC2jdhM.js.map
+//# sourceMappingURL=main-Bg0x1Tda.js.map
