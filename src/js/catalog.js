@@ -11,6 +11,7 @@ const mediaQuery = window.matchMedia("(width <= 768px)");
 function createCard(product) {
   const card = document.createElement("li");
   card.className = "card__item";
+  card.dataset.productIndex = products.indexOf(product);
 
   card.innerHTML = `<div class="card-image__wrapper">
     <img

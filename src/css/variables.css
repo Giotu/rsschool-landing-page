@@ -6,6 +6,8 @@
   --color-bg-page: #e1d4c9;
   --color-bg-container: #665f55;
   --color-bg-overlay: #403f3dcc;
+  --color-bg-modal: #e1d4c9;
+  --color-bg-modal-active: #665f55;
   --color-border-primary: #c1b6ad;
   --color-border-inverse: #665f55;
 
@@ -51,6 +53,8 @@
   --color-bg-page: #292826;
   --color-bg-container: #403f3d;
   --color-bg-overlay: #292826cc;
+  --color-bg-modal: #403f3d;
+  --color-bg-modal-active: #292826;
   --color-border-primary: #665f55;
   --color-border-inverse: #c1b6ad;
 }
