@@ -12,7 +12,7 @@
       }
     </script>
     <link rel="stylesheet" href="./src/css/main.css" />
-    <script type="module" src="./src/js/main.js"></script>
+    <script type="module" src="./src/js/menu.js"></script>
     <title>Coffee House</title>
   </head>
   <body>
@@ -66,7 +66,9 @@
                 </svg>
               </span>
             </button>
-            <a href="./menu.html" class="menu-link menu-link--active"
+            <a
+              href="./menu.html"
+              class="menu-link menu-link--desktop menu-link--active"
               ><span>Menu</span>
               <svg class="icon">
                 <use
@@ -87,7 +89,10 @@
             <span class="accent">amazing surprise</span>
           </h2>
           <div class="menu__switch">
-            <button class="button-switch button-switch--active">
+            <button
+              class="button-switch button-switch--active"
+              data-category="coffee"
+            >
               <span class="button-image__wrapper">
                 <img
                   src="./src/assets/images/switch-coffee.png"
@@ -96,13 +101,13 @@
               </span>
               <span>Coffee</span>
             </button>
-            <button class="button-switch">
+            <button class="button-switch" data-category="tea">
               <span class="button-image__wrapper">
                 <img src="./src/assets/images/switch-tea.png" alt="Tea image" />
               </span>
               <span>Tea</span>
             </button>
-            <button class="button-switch">
+            <button class="button-switch" data-category="dessert">
               <span class="button-image__wrapper">
                 <img
                   src="./src/assets/images/switch-dessert.png"
@@ -112,139 +117,12 @@
               <span>Dessert</span>
             </button>
           </div>
-          <ul class="card__list">
-            <li class="card__item">
-              <div class="card-image__wrapper">
-                <img
-                  class="card__image"
-                  src="./src/assets/images/coffee-1.jpg"
-                  alt="Fragrant black coffee with Jameson Irish whiskey and whipped
-                  milk"
-                />
-              </div>
-              <div class="card__description">
-                <h3 class="card__title">Irish coffee</h3>
-                <p class="card__text">
-                  Fragrant black coffee with Jameson Irish whiskey and whipped
-                  milk
-                </p>
-                <p class="card__price">$7.00</p>
-              </div>
-            </li>
-            <li class="card__item">
-              <div class="card-image__wrapper">
-                <img
-                  class="card__image"
-                  src="./src/assets/images/coffee-2.jpg"
-                  alt="Classic coffee with milk and Kahlua liqueur under a cap of
-                  frothed milk"
-                />
-              </div>
-              <div class="card__description">
-                <h3 class="card__title">Kahlua coffee</h3>
-                <p class="card__text">
-                  Classic coffee with milk and Kahlua liqueur under a cap of
-                  frothed milk
-                </p>
-                <p class="card__price">$7.00</p>
-              </div>
-            </li>
-            <li class="card__item">
-              <div class="card-image__wrapper">
-                <img
-                  class="card__image"
-                  src="./src/assets/images/coffee-3.jpg"
-                  alt="Espresso with frothed milk, cream and aromatic honey"
-                />
-              </div>
-              <div class="card__description">
-                <h3 class="card__title">Honey raf</h3>
-                <p class="card__text">
-                  Espresso with frothed milk, cream and aromatic honey
-                </p>
-                <p class="card__price">$5.50</p>
-              </div>
-            </li>
-            <li class="card__item">
-              <div class="card-image__wrapper">
-                <img
-                  class="card__image"
-                  src="./src/assets/images/coffee-4.jpg"
-                  alt="Cappuccino with soft thick foam in summer version with ice"
-                />
-              </div>
-              <div class="card__description">
-                <h3 class="card__title">Ice cappuccino</h3>
-                <p class="card__text">
-                  Cappuccino with soft thick foam in summer version with ice
-                </p>
-                <p class="card__price">$5.00</p>
-              </div>
-            </li>
-            <li class="card__item">
-              <div class="card-image__wrapper">
-                <img
-                  class="card__image"
-                  src="./src/assets/images/coffee-5.jpg"
-                  alt="Espresso"
-                />
-              </div>
-              <div class="card__description">
-                <h3 class="card__title">Espresso</h3>
-                <p class="card__text">Classic black coffee</p>
-                <p class="card__price">$4.50</p>
-              </div>
-            </li>
-            <li class="card__item">
-              <div class="card-image__wrapper">
-                <img
-                  class="card__image"
-                  src="./src/assets/images/coffee-6.jpg"
-                  alt="Latte"
-                />
-              </div>
-              <div class="card__description">
-                <h3 class="card__title">Latte</h3>
-                <p class="card__text">
-                  Espresso coffee with the addition of steamed milk and dense
-                  milk foam
-                </p>
-                <p class="card__price">$5.50</p>
-              </div>
-            </li>
-            <li class="card__item">
-              <div class="card-image__wrapper">
-                <img
-                  class="card__image"
-                  src="./src/assets/images/coffee-7.jpg"
-                  alt="Latte macchiato"
-                />
-              </div>
-              <div class="card__description">
-                <h3 class="card__title">Latte macchiato</h3>
-                <p class="card__text">
-                  Espresso with frothed milk and chocolate
-                </p>
-                <p class="card__price">$5.50</p>
-              </div>
-            </li>
-            <li class="card__item">
-              <div class="card-image__wrapper">
-                <img
-                  class="card__image"
-                  src="./src/assets/images/coffee-8.jpg"
-                  alt="Fragrant black coffee with cognac and whipped cream"
-                />
-              </div>
-              <div class="card__description">
-                <h3 class="card__title">Coffee with cognac</h3>
-                <p class="card__text">
-                  Fragrant black coffee with cognac and whipped cream
-                </p>
-                <p class="card__price">$6.50</p>
-              </div>
-            </li>
-          </ul>
+          <ul class="card__list"></ul>
+          <button class="round-button load-more">
+            <svg class="icon">
+              <use href="./src/assets/images/sprite.svg#icon-load-more"></use>
+            </svg>
+          </button>
         </section>
       </div>
     </main>
@@ -329,5 +207,62 @@
         </div>
       </div>
     </footer>
+    <div class="overlay overlay--hidden">
+      <div class="modal">
+        <img src="" alt="Card Image" class="product__image" />
+        <div class="product">
+          <div class="product__info">
+            <h3 class="product__title"></h3>
+            <p class="product__description"></p>
+          </div>
+          <div class="product__size">
+            <span>Size</span>
+            <div class="buttons-size-wrapper">
+              <button class="button-product">
+                <div class="circle">S</div>
+                <span class="size-text"></span>
+              </button>
+              <button class="button-product">
+                <div class="circle">M</div>
+                <span class="size-text"></span>
+              </button>
+              <button class="button-product">
+                <div class="circle">L</div>
+                <span class="size-text"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product__additives">
+            <span>Additives</span>
+            <div class="buttons-size-wrapper">
+              <button class="button-product">
+                <div class="circle">1</div>
+                <span class="additives-text"></span>
+              </button>
+              <button class="button-product">
+                <div class="circle">2</div>
+                <span class="additives-text"></span>
+              </button>
+              <button class="button-product">
+                <div class="circle">3</div>
+                <span class="additives-text"></span>
+              </button>
+            </div>
+          </div>
+          <div class="product__price">
+            <span>Total:</span>
+            <span></span>
+          </div>
+          <div class="promo">
+            <div class="price-disclaimer">
+              The cost is not final. Download our mobile app to see the final
+              price and place your order. Earn loyalty points and enjoy your
+              favorite coffee with up to 20% discount.
+            </div>
+          </div>
+          <button class="button-close-modal">Close</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
